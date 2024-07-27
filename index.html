@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Calculator</title>
+                    <link rel="stylesheet" href="calc.css">
+                </head>
+                <body>
+                <div class="container">
+                    <div class="calculator">
+                        <form name="calc">
+                            <div class="display">
+                                <input type="text" name="display" id="display" readonly>
+                            </div>
+                            <div class="buttons">
+                                <input type="button" value="AC" onclick="clearDisplay()" class="operator">
+                                <input type="button" value="DE" onclick="deleteLast()" class="operator">
+                                <input type="button" value="." onclick="appendNumber('.')" class="operator">
+                                <input type="button" value="/" onclick="appendOperator('/')" class="operator">
+                                <input type="button" value="7" onclick="appendNumber('7')" class="number">
+                                <input type="button" value="8" onclick="appendNumber('8')" class="number">
+                                <input type="button" value="9" onclick="appendNumber('9')" class="number">
+                                <input type="button" value="*" onclick="appendOperator('*')" class="operator"> 
+                                <input type="button" value="4" onclick="appendNumber('4')" class="number">
+                                <input type="button" value="5" onclick="appendNumber('5')" class="number">
+                                <input type="button" value="6" onclick="appendNumber('6')" class="number">
+                                <input type="button" value="-" onclick="appendOperator('-')" class="operator">
+                                <input type="button" value="1" onclick="appendNumber('1')" class="number">
+                                <input type="button" value="2" onclick="appendNumber('2')" class="number">
+                                <input type="button" value="3" onclick="appendNumber('3')" class="number">
+                                <input type="button" value="+" onclick="appendOperator('+')" class="operator">
+                                <input type="button" value="00" onclick="appendNumber('00')" class="number">
+                                <input type="button" value="0" onclick="appendNumber('0')" class="number">
+                                <input type="button" value="=" onclick="calculateResult()" class="equal operator">
+                            </div>
+                        </form>
+                    </div>
+                </div>  
+                <script src="calc.js"></script>
+                </body>
+                </html>
+                
